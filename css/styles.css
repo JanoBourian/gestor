@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f6f6f6d3;
+}
+
+
+/* Estilos globales */
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contenedor-header-element {
+    width: 33%;
+}
+
+.contenedor-total {
+    background-color: blue;
+}
+
+.contenedor-ingresos {
+    background-color: green;
+}
+
+.contenedor-egresos {
+    background-color: purple;
+}
+
+
+/* Main */
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario-container,
+.ingresos-container,
+.egresos-container {
+    margin-top: 20px;
+    width: 33%;
+    border: 1px solid black;
+}
+
+.titulo-main-section {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}

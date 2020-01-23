@@ -37,14 +37,14 @@
         <div class="formulario-container">
             <h2 class="titulo-main-section"> Registro </h2>
             <div class="form-container">
-                <form action="" class="formulario">
+                <form action="" id="formulario" class="formulario">
                     <input type="number" name="cantidad" id="cantidad" placeholder="Monto" required>
                     <input type="text" name="concepto" id="concepto" placeholder="Concepto" required>
                     <input type="date" name="fecha" id="fecha">
                     <input list="tipo" required placeholder="Tipo" class="list" id="list">
                     <datalist id="tipo" class="tipo" required>
-                        <option value="Egreso"></option>
-                        <option value="Ingreso"></option>
+                        <option value="ingreso"></option>
+                        <option value="egreso"></option>
                     </datalist>
                     <input type="submit" value="Registrar" id="enviar" class="enviar">
                 </form>
@@ -65,25 +65,7 @@
                             <th scope="col">X</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td colspan="2">Pago de mensualidad</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                    <tbody id='tbody-ingresos'>
                     </tbody>
                 </table>
 
@@ -103,25 +85,7 @@
                             <th scope="col">X</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td colspan="2">Pago de mensualidad</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                    <tbody id='tbody-egresos'>
                     </tbody>
                 </table>
 

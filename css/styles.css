@@ -54,7 +54,7 @@ header {
 }
 
 .contenedor-egresos {
-    background-color: purple;
+    background-color: red;
 }
 
 
@@ -91,6 +91,7 @@ input[type="number"],
 input[type="text"],
 input[type="date"],
 .list,
+.tipo,
 input[type="submit"] {
     padding: 20px;
     font-size: 20px;
@@ -102,6 +103,19 @@ input[type="submit"] {
 
 .tabla-datos {
     text-align: center;
+}
+
+.seleccion-ingreso,
+.seleccion-egreso {
+    font-size: 36px;
+}
+
+.seleccion-ingreso {
+    color: green;
+}
+
+.seleccion-egreso {
+    color: red;
 }
 
 

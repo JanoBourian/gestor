@@ -41,11 +41,11 @@
                     <input type="number" name="cantidad" id="cantidad" placeholder="Monto" required>
                     <input type="text" name="concepto" id="concepto" placeholder="Concepto" required>
                     <input type="date" name="fecha" id="fecha">
-                    <input list="tipo" required placeholder="Tipo" class="list" id="list">
-                    <datalist id="tipo" class="tipo" required>
-                        <option value="ingreso"></option>
-                        <option value="egreso"></option>
-                    </datalist>
+                    <select id="tipo" class="tipo" required>
+                        <option value=''>-- Tipo de Gasto --</option>
+                        <option value="ingreso" class="seleccion-ingreso">Ingreso</option>
+                        <option value="egreso" class="seleccion-egreso">Egreso</option>
+                    </select>
                     <input type="submit" value="Registrar" id="enviar" class="enviar">
                 </form>
             </div>

@@ -20,7 +20,7 @@ function leerValores(e) {
     const montoFormulario = document.getElementById("cantidad").value;
     const conceptoFormulario = document.getElementById("concepto").value;
     let fechaFormulario = document.getElementById("fecha").value;
-    const tipoFormulario = document.getElementById("list").value;
+    const tipoFormulario = document.getElementById("tipo").value;
 
     //Se va a generar una fecha en caso de no ingresar una
     if (fechaFormulario === "" || fechaFormulario === null) {
@@ -86,7 +86,7 @@ function insertarFila(datos, llave) {
         <th scope="row">${datos[0]}</th>
         <td>$ ${datos[1]}</td>
         <td colspan="2">${datos[2]}</td>
-        <td><a id=${llave} href="" onclick="crearId(${llave})">X</a></td>
+        <td><a id=${llave} style="color:red; font-weight:bold;font-size:18px;" href="" onclick="crearId(${llave})">X</a></td>
     </tr>
     `;
 }
@@ -104,3 +104,6 @@ function borrarBoton(e) {
     e.preventDefault();
     console.log("Se quiere borrar");
 }
+
+/* Anexo de estilo para los ingresos o egresos */
+let seleccionTipo = document.getElementById('tipo');
